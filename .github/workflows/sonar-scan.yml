@@ -26,7 +26,7 @@ jobs:
         uses: actions/setup-java@v1
         with:
           java-version: 11
-      - name: Build with Maven
+      - name: Build with Mavens
         run: mvn clean install -Dgpg.signature.skip=true --file pom.xml
       - name: Sonar Scan
         env:
